@@ -32,16 +32,20 @@ vs2017安装以及opencv开发配置
 7. 配置 opencv:
   1. 修改配置属性(** visual2017的正上方用于选择配置，此时需要选择Debug x64**): 属性管理器->项目名称-> Debug|x64(如果是32位机器选择32) -> 右键 -> 属性
     > 本人小白，暂时理解为： 工程在不同环境下配置不同环境, Debug模式 与 Release模式不同, 32 还是 64 与机器有关。
+
   2. VC++ 目录->包含目录: 添加目录  
     > C:\Program Files\opencv\build\include\opencv2  
     > C:\Program Files\opencv\build\include\opencv  
     > C:\Program Files\opencv\build\include
+
   3. VC++ 目录->库目录: 添加目录  
     > C:\Program Files\opencv\build\x64\vc14\lib
     > C:\Program Files\opencv\build\x64\vc15\lib
+
   4. 链接器->输入->附加依赖项: 添加  
     > opencv_world340d.lib  
     > ** 注意: ** 此处的 340 表示opencv版本， d 表示 debug，如果你是Release 应该不需要 d，个人猜测。
+
 8. 配置完成，修改HelloWorld.cpp:
   ``` c++
   #include <opencv2/opencv.hpp> //包含头文件
