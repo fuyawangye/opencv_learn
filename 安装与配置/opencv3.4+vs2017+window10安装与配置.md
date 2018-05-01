@@ -34,12 +34,14 @@ vs2017安装以及opencv开发配置
     > 本人小白，暂时理解为： 工程在不同环境下配置不同环境, Debug模式 与 Release模式不同, 32 还是 64 与机器有关。
 
   2. VC++ 目录->包含目录: 添加目录  
+
     > C:\Program Files\opencv\build\include\opencv2  
     > C:\Program Files\opencv\build\include\opencv  
     > C:\Program Files\opencv\build\include
 
   3. VC++ 目录->库目录: 添加目录  
-    > C:\Program Files\opencv\build\x64\vc14\lib
+
+    > C:\Program Files\opencv\build\x64\vc14\lib  
     > C:\Program Files\opencv\build\x64\vc15\lib
 
   4. 链接器->输入->附加依赖项: 添加  
